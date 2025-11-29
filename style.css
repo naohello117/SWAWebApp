@@ -169,6 +169,32 @@ a {
     color: var(--primary);
 }
 
+.hero-countdown {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0 32px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(249, 115, 22, 0.1));
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 12px;
+    font-size: 0.95rem;
+    width: fit-content;
+}
+
+.countdown-label {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+.countdown-time {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #dc2626;
+    letter-spacing: 0.05em;
+}
+
 .hero-stats {
     display: grid;
     grid-template-columns: repeat(3, minmax(120px, 1fr));
@@ -354,6 +380,16 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.18em;
     opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+#activity-bar {
+    transition: width 0.6s ease;
+}
+
+#review-quote,
+#review-author {
+    transition: opacity 0.3s ease;
 }
 
 @media (max-width: 960px) {

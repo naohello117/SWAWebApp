@@ -30,17 +30,21 @@
                 <a href="#" class="hero-btn primary">無料で始める</a>
                 <a href="#" class="hero-btn secondary">製品ツアーを見る</a>
             </div>
+            <p class="hero-countdown">
+                <span class="countdown-label">本日限定キャンペーン</span>
+                <span class="countdown-time" id="countdown">--:--:--</span>
+            </p>
             <ul class="hero-stats">
                 <li>
-                    <strong>12,400+</strong>
+                    <strong id="stat-members">12,400+</strong>
                     <span>登録メンバー</span>
                 </li>
                 <li>
-                    <strong>98%</strong>
+                    <strong id="stat-satisfaction">98%</strong>
                     <span>満足度スコア</span>
                 </li>
                 <li>
-                    <strong>320</strong>
+                    <strong id="stat-events">320</strong>
                     <span>月間イベント</span>
                 </li>
             </ul>
@@ -62,24 +66,25 @@
                     <h2>コミュニティダッシュボード</h2>
                     <div class="progress-row">
                         <span>今週のアクティビティ</span>
-                        <span>86%</span>
+                        <span id="activity-percent">86%</span>
                     </div>
                     <div class="progress-bar">
-                        <span style="width: 86%"></span>
+                        <span id="activity-bar" style="width: 86%"></span>
                     </div>
                     <div class="avatar-group">
                         <span class="avatar">AK</span>
                         <span class="avatar">SN</span>
                         <span class="avatar">HM</span>
-                        <span class="avatar more">+5</span>
+                        <span class="avatar more" id="online-count">+5</span>
                     </div>
                 </div>
             </div>
             <div class="hero-card card-secondary">
-                <p class="card-quote">“毎日のディスカッションで、新しいコラボが生まれました。”</p>
-                <span class="card-author">Mia / Product Designer</span>
+                <p class="card-quote" id="review-quote">"毎日のディスカッションで、新しいコラボが生まれました。"</p>
+                <span class="card-author" id="review-author">Mia / Product Designer</span>
             </div>
         </div>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
